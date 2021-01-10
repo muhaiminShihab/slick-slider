@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fefe;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+/* Banner Area */
+.banner-item {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.banner-item::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 13, 60, 0.53);
+}
+
+.banner-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-data h3 {
+    font-size: 25px;
+}
+
+.banner-data h1 {
+    font-size: 40px;
+}
+
+button.prevdot.slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: 0;
+    background: orange;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+button.nextdot.slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: 0;
+    background: orange;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+ul.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+}
+
+ul.slick-dots li {
+    display: inline;
+}
+
+ul.slick-dots li button {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: orange;
+    width: 30px;
+    height: 30px;
+    line-height: 100%;
+}
